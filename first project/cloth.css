@@ -1,0 +1,434 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: roboto sans-serif;
+  }
+  body{
+    background-color:#eee;
+  }
+  
+  header{
+    position: fixed;
+    top: 0px;
+    width:100%;
+    background-color: #eee;
+    height: 100px;
+    box-shadow: 5px 4px 12px 2px rgb(0,0,0,0.4);
+  }
+
+  nav{
+   display: flex;
+   justify-content: space-between;
+  /*  background-color: #eeee;*/
+  
+  }
+  .nav-logo
+  {
+    background-image: url(logo_cloths.png);
+    background-size: cover;
+    height: 5rem;
+    width: 5rem;
+    font-size: 40px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    /* padding: 20px; */
+    
+    /* padding: 20px; */
+  margin: 10px 0px 0px 45px;
+    
+    
+  }
+  .nav-logo img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20px;
+    /* padding: 10px; */
+  }
+  nav ul{
+    margin-right: 45px;
+  }
+  ul li a{
+    display: flex;
+    justify-content: space-evenly;
+    display: inline-block;
+    padding: 20px;
+    margin-top :15px;
+    margin-right: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    /*margin: 5px 10px 5px 10px;
+    margin-inline: 20px;*/
+  }
+  ul li{
+    list-style: none;
+  }
+  ul li i{
+    font-size: 20px;
+  }
+  /* {
+    color: darkturquoise;
+    
+  } */ 
+  ul li a:hover ,ul li a .active{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+  }
+
+ 
+  ul li i:hover{
+    color: gray;
+    cursor: pointer;
+  }
+  .icon{
+    display :none;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+  }
+  
+    li button{
+      font-size: 20px;
+      text-align: center;
+      width: 100px;
+      height: 36px;
+      /* background-color: black; */
+      background-color:  rgb(1,1,42);
+      border:2px solid black;
+      color: antiquewhite;
+      cursor: pointer;
+    /* padding: 10px; */
+  }
+    .loginpage{
+      display: none;
+      width: 241px;
+      padding: 36px;
+      background-color: rgb(85, 108, 109);
+      position:fixed;
+      text-align: center;
+      margin-left: 83%;
+      margin-top:100px;
+      
+      }
+      .loginpage input{
+          width: 170px;
+          padding: 4px;
+          border: 2px solid hsl(240, 35%, 12%);
+          outline: none;
+          margin-top: 10px;
+       
+      }
+      .loginpage button{
+          width: 100px;
+          height: 30px;
+          background-color:  rgb(66, 66, 96);
+          border: 2px solid hsl(240, 35%, 12%);
+          color:white;
+          font-size: 20px;
+          border: none;
+          cursor: pointer;
+          margin-top: 13px;
+      
+      }
+  
+  /* main pages */
+  .main{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .text{
+    margin-top: 300px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .text h2{
+    font-size: 45px;
+    color: #37B7C3;
+  
+  }
+  .text h3{
+   /* margin: 0 10px 0 10px;*/
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .text button{
+    width:145px;
+    height: 40px;
+    background-color: darkturquoise ;
+    border:none;
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    /* /padding: 10px;/ */
+  }
+  .text button:hover{
+    border: 3px solid darkturquoise; 
+    background-color: transparent;
+    color: darkturquoise;
+  }
+  
+  /* /cards/ */
+  .trend .heade{
+    text-align: center;
+  /*  padding: 10px;*/
+    /* margin-top: 40px; */
+    font-size:20px;
+    padding: 100px;
+  }
+  .heade span{
+    color: #37B7C3;
+    font-size: 3.5rem;
+  
+  }
+  
+  .card{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  
+  }
+  
+  .card .crd{
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    margin-inline: 20px;
+    
+     
+  }
+  .crd img{ 
+    height: 350px;
+    width:250px;
+    padding: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    border-radius: 31px;
+  }
+ 
+  
+  .crdtext{
+    margin-left: 25px;
+    /* /padding: 5px;/ */
+  }
+  .crdtext button{
+    height:33px;
+    width: 110px;
+    border:none;
+    background-color: darkturquoise;
+    margin-top: 10px;
+    font-size: 19px;
+  
+  }
+  .crdtext i{
+    margin-top: 7px;
+    padding: 3px;
+    /* /background-color: rgb(250, 149, 0);/ */
+    background-color: #FFDA76;
+    color: white;
+    border-radius: 3px;
+  }
+  /* /blog/ */
+  .blog{
+    display:flex;
+    justify-content: center;
+    width:500px;
+    height: 300px;
+    background-color:#fff;
+    margin-inline: 20px;
+    border-radius: 11px;
+    margin-bottom: 20PX;
+  }
+  .blog:hover{
+    transition: 0.6s ease;
+    width : 520px;
+    height: 320px;
+  }
+  .blog img{
+    padding: 22px;
+    width: 85%;
+  }
+  .blogtext{
+    margin: 20px;
+    padding: 3px;
+  }
+  .blogtext a{
+   
+    background-color: darkturquoise;
+    color: white;
+    width: 130px;
+    height: 18px;
+    padding: 9px;
+    font-size: 15px;
+    border-radius: 4px;
+    /* position: absolute; */
+    top: 5px;
+    /* margin-top: 22px; */
+    text-decoration: none;
+  /*  margin-top: 22px;*/
+  }
+  
+  /* letter */
+  .letter{
+   
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(2, 2, 66);
+    color: white;
+    padding: 48px;
+    /* margin-top: 332px; */
+    height: 200px;
+}
+.blogbtn{
+  margin-top: 63px;
+}
+
+  .inp{
+    display :flex;
+  }
+  .inp input{
+    outline: none;
+    height: 33px;
+    width: 330px;
+    font-size:15px;
+    border:none;
+    margin-left: 0px;
+  }
+  .inp button{
+    width: 100px;
+    height :33px;
+    background-color: darkturquoise;
+    color: white;
+    border :none;
+  }
+  
+  /* footer */
+  .footer{
+    display: flex;
+    justify-content: center;
+    padding: 53px;
+  }
+  .footer .footext{
+    margin-inline: 70px;
+  }
+  .footext p{
+    margin:10px;
+  }
+  
+  /* about */
+  .abouts{
+    display :none;
+  }
+  .aboutus{
+    background-color: rgb(1,1,42);
+    color: white ;
+    padding: 56px;
+    font-size: 23px;
+  }
+  .me{
+    display :flex;
+    justify-content: center;
+    width: 700px;
+    background-color: white ;
+    margin-left:150px;
+    margin-top: 30px;
+    padding: 33px;
+  }
+  .me img{
+    width:53%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px
+    margin-bottom:10px;
+    box-sizing: border-box;*/
+  
+  
+  /*.card{
+    display: flex;
+   /* flex-wrap: wrap;*/
+  /*  justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+  .card .crd{
+    width:300px;
+    height: 500px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right:15px;
+   margin-inline: 11px;
+   background-size: cover;
+   padding: 20px;
+  }*/
+  
+  /*.card img{
+    width:85%;
+    padding: 22px;
+    border-radius: 31px;*/
+  /*  width :50;
+   height: 350px;*/
+  /*background-size:cover;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  }
+  /*margin-left: 1rem;
+  margin-right:1rem;*/
+  /* /padding: 30px;/ */
+    /*padding: 10px;
+    border-radius: 31px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;*/
+  /*  border: 2px solid black;*/
+  /* .letter{
+    /* display: flex;
+    justify-content: space-between;
+    background-color: rgba(2, 2, 66);
+    color: white ;
+    padding: 43px;
+    margin-top: 0px; */
+    /* display: flex;
+    justify-content: space-between;
+    background-color: rgba(2, 2, 66);
+    color: white;
+    padding: 48px; */
+    /* margin-top: 332px; */
+    /* height: 200px;
+} */
